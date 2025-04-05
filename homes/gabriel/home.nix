@@ -23,13 +23,18 @@
 
   # home.packages = [];
 
-  # home.file = [];
+  home.file = {
+    ".config/hypr" = {
+      source = config.lib.file.mkOutOfStoreSymlink ../common/dotfiles/.config/hypr;
+    };
+  };
 
   # home.sessionVariables = [];
 
   imports = [
     # ../common/modules/onedrive.nix
     ../common/modules/obs.nix
+    # ../common/modules/hyprland.nix
   ];
 
   programs.home-manager.enable = true;
