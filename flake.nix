@@ -1,3 +1,5 @@
+# schema: https://nixos.wiki/wiki/Flakes#Output_schema
+
 {
   description = "A very basic flake";
 

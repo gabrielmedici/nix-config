@@ -16,7 +16,6 @@
       ./modules/discord.nix
       ./modules/vscode.nix
       ./modules/steam.nix
-      ./modules/nil.nix
       ./modules/gnome.nix
       ./modules/git.nix
     ];
