@@ -28,7 +28,8 @@
   # home.sessionVariables = [];
 
   imports = [
-    ../common/modules/onedrive.nix
+    # ../common/modules/onedrive.nix
+    ../common/modules/obs.nix
   ];
 
   programs.home-manager.enable = true;
