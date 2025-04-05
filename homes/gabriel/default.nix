@@ -1,31 +1,14 @@
-{config, pkgs, ...} : {
-  home.username = "gabriel";
-  home.homeDirectory = "/home/gabriel";
+{inputs, ...}:{
+  users.users.gabriel = {
+    isNormalUser = true;
+    description = "gabriel";
+    extraGroups = [ "networkmanager" "wheel" ];
+  };
 
-  home.stateVersion = "24.11";
-
-  dconf = {
-    enable = true;
-    settings."org/gnome/desktop/interface".color-scheme = "prefer-dark";
-    settings."org/gnome/shell" = {
-      disable-user-extensions = false;
-      enabled-extensions = with pkgs.gnomeExtensions; [
-        hot-edge.extensionUuid
-      ];
+  home-manager = {
+    extraSpecialArgs = { inherit inputs; };
+    users = {
+      gabriel = import ./home.nix;
     };
   };
-
-  programs.git = {
-    enable = true;
-    userEmail = "j.gabriel.medici@gmail.com";
-    userName = "Gabriel Medici";
-  };
-
-  # home.packages = [];
-
-  # home.file = [];
-
-  # home.sessionVariables = [];
-
-  programs.home-manager.enable = true;
 }

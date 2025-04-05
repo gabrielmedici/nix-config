@@ -18,6 +18,8 @@
       ./modules/steam.nix
       ./modules/gnome.nix
       ./modules/git.nix
+
+      ./homes/gabriel
     ];
 
   # Bootloader.
@@ -90,21 +92,6 @@
   # services.xserver.libinput.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.gabriel = {
-    isNormalUser = true;
-    description = "gabriel";
-    extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-    #  thunderbird
-    ];
-  };
-
-  home-manager = {
-    extraSpecialArgs = { inherit inputs; };
-    users = {
-      gabriel = import ./homes/gabriel;
-    };
-  };
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
