@@ -20,6 +20,10 @@
       ./modules/git.nix
       ./modules/audio.nix
       ./modules/hyprland.nix
+      ./modules/bottles.nix
+      ./modules/wine.nix
+      ./modules/lutris.nix
+      ./modules/protonvpn.nix
 
       ./homes/gabriel
     ];
