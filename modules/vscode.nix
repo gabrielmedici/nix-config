@@ -12,6 +12,8 @@
                 
                 ms-python.python
                 rust-lang.rust-analyzer
+                
+                usernamehw.errorlens
             ];
         })
     ];
