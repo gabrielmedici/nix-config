@@ -24,6 +24,7 @@
       ./modules/wine.nix
       ./modules/lutris.nix
       ./modules/protonvpn.nix
+      ./modules/rust.nix
 
       ./homes/gabriel
     ];

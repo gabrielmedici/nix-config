@@ -9,6 +9,7 @@
             vscodeExtensions = with vscode-extensions; [
                 jnoortheen.nix-ide
                 ms-python.python
+                rust-lang.rust-analyzer
             ];
         })
     ];
