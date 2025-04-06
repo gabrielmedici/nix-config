@@ -25,18 +25,13 @@
     userName = "Gabriel Medici";
   };
 
-  home.file = {
-    ".config/hypr" = {
-      source = config.lib.file.mkOutOfStoreSymlink ../common/dotfiles/.config/hypr;
-    };
-  };
+  # home.file = {};
 
   # home.sessionVariables = [];
 
   imports = [
     # ../common/modules/onedrive.nix
     ../common/modules/obs.nix
-    # ../common/modules/hyprland.nix
   ];
 
   programs.home-manager.enable = true;
