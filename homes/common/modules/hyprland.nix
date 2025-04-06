@@ -6,7 +6,7 @@
     # The hyprland package to use
     package = pkgs.hyprland;
     # Whether to enable XWayland
-    xwayland.enable = true;
+    xwayland.enable = false;
 
     # Optional
     # Whether to enable hyprland-session.target on hyprland startup

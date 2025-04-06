@@ -1,5 +1,7 @@
 { pkgs, config, libs, ... }:
 {
+  environment.sessionVariables.NIXOS_OZONE_WL = "1";
+
   # Enable OpenGL
   hardware.graphics = {
     enable = true;
