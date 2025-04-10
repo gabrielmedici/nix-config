@@ -1,7 +1,7 @@
 { pkgs, config, libs, ...}:
 {
   # Nix LSP
-  environment.systemPackages = [
+  home.packages = [
     pkgs.nil
     pkgs.nixfmt-rfc-style
   ];

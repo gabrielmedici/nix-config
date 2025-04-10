@@ -1,4 +1,8 @@
 {pkgs, ...}: {
+  imports = [
+    ./nil.nix
+  ];
+
   programs.vscode = {
     enable = true;
     extensions = with pkgs.vscode-extensions; [
