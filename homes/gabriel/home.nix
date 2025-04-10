@@ -35,5 +35,12 @@
     ../common/modules/spicetify.nix
   ];
 
+  xdg.desktopEntries = {
+    edit-nix-config = {
+      name = "Edit Nix Config with VSCode";
+      exec = "code /etc/nixos/";
+    };
+  };
+
   programs.home-manager.enable = true;
 }
