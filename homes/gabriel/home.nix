@@ -29,6 +29,9 @@
 
   # home.sessionVariables = [];
 
+  nixpkgs.config = import ./nixpkgs.config.nix;
+  xdg.configFile."nixpkgs/config.nix".source = ./nixpkgs.config.nix;
+
   imports = [
     # ../common/modules/onedrive.nix
     ../common/modules/obs.nix
