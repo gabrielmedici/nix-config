@@ -14,7 +14,6 @@
       ./modules/ms-edge.nix
       ./modules/htop.nix
       ./modules/discord.nix
-      ./modules/vscode.nix
       ./modules/steam.nix
       ./modules/gnome.nix
       ./modules/git.nix

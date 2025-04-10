@@ -37,6 +37,7 @@
     ../common/modules/obs.nix
     ../common/modules/spicetify.nix
     ../common/modules/direnv.nix
+    ../common/modules/vscode.nix
   ];
 
   xdg.desktopEntries = {
