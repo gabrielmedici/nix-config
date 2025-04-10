@@ -36,6 +36,7 @@
     # ../common/modules/onedrive.nix
     ../common/modules/obs.nix
     ../common/modules/spicetify.nix
+    ../common/modules/direnv.nix
   ];
 
   xdg.desktopEntries = {

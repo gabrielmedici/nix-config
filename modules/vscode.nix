@@ -8,7 +8,7 @@
         (vscode-with-extensions.override {
             vscodeExtensions = with vscode-extensions; [
                 jnoortheen.nix-ide
-                arrterian.nix-env-selector
+                mkhl.direnv
                 
                 ms-python.python
                 rust-lang.rust-analyzer
