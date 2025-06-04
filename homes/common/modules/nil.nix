@@ -1,8 +1,6 @@
-{ pkgs, config, libs, ...}:
-{
-  # Nix LSP
-  home.packages = [
-    pkgs.nil
-    pkgs.nixfmt-rfc-style
-  ];
+{pkgs, ...}: {
+    home.packages = with pkgs; [
+        nil
+        nixfmt-rfc-style
+    ];
 }
