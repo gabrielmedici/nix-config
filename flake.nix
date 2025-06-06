@@ -34,6 +34,7 @@
               home-manager = {
                 useGlobalPkgs = true;
                 useUserPackages = true;
+                backupFileExtension = ".nixbackup";
               };
 
               home-manager.users.gabriel = import ./homes/gabriel/home.nix;

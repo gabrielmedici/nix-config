@@ -94,7 +94,7 @@
         };
       };
       gestures = {
-        workspace_swipe = false;
+        workspace_swipe = true;
       };
       bind = [
         "$mod, Q, exec, $terminal"

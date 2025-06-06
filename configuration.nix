@@ -14,6 +14,7 @@
       ./homes/gabriel
 
       ./modules/hyprland.nix
+      ./modules/fonts.nix
     ];
 
   # Bootloader.
