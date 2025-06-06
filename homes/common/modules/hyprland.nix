@@ -5,6 +5,9 @@
 
   wayland.windowManager.hyprland = {
     enable = true;
+    plugins = [
+      pkgs.hyprlandPlugins.hyprwinwrap
+    ];
     settings = {
       "$mod" = "SUPER";
       "$terminal" = "kitty";
@@ -156,6 +159,12 @@
         "suppressevent maximize, class:.*"
         "nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
       ];
+      #plugin = {
+      #  hyprwinwrap = {
+      #    class = "kitty-astroterm";
+      #  };
+      #};
+      #"exec-once" = "kitty --class=\"kitty-astroterm\" \"astroterm\"&";
     };
   };
 

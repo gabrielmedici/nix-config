@@ -26,6 +26,7 @@
     ../common/modules/vlc.nix
     ../common/modules/hyprland.nix
     ../common/modules/rofi.nix
+    ../common/modules/astroterm.nix
   ];
 
   xdg.desktopEntries = {
