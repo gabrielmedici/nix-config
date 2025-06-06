@@ -12,6 +12,8 @@
       ./hardware-configuration.nix
 
       ./homes/gabriel
+
+      ./modules/hyprland.nix
     ];
 
   # Bootloader.

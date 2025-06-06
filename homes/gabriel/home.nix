@@ -23,6 +23,9 @@
   imports = [
     ../common/modules/vscode.nix
     ../common/modules/ms-edge.nix
+    ../common/modules/vlc.nix
+    ../common/modules/hyprland.nix
+    ../common/modules/rofi.nix
   ];
 
   xdg.desktopEntries = {
