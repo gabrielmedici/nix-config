@@ -18,6 +18,8 @@
           "custom/separator"
           "pulseaudio"
           "custom/separator"
+          "backlight"
+          "custom/separator"
           "battery"
           "custom/separator"
           "power-profiles-daemon"
@@ -49,6 +51,14 @@
           };
           reverse-scrolling = true;
           interval = 1;
+        };
+
+        "backlight" = {
+          format = "{icon} {percent}%";
+          format-icons = {
+            default = "󰃟";
+          };
+          reverse-scrolling = true;
         };
 
         clock = {

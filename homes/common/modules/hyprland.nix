@@ -3,6 +3,14 @@
     ./waybar.nix
   ];
 
+  programs.hyprlock = {
+    enable = true;
+  };
+
+  services.hypridle = {
+    enable = true;
+  };
+
   wayland.windowManager.hyprland = {
     enable = true;
     plugins = [
@@ -136,6 +144,7 @@
         "$mod SHIFT, S, movetoworkspace, special:magic"
         "$mod, mouse_down, workspace, e+1"
         "$mod, mouse_up, workspace, e-1"
+        "$mod SHIFT, P, exec, rofi -show power-menu -theme-str 'window {width: 10em;} listview {lines: 6;}'"
       ];
       bindm = [
         "$mod, mouse:272, movewindow"
