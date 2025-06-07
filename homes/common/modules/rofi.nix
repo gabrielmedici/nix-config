@@ -1,4 +1,12 @@
-{pkgs, ...}: {
+{pkgs, ...}: 
+let 
+  script = pkgs.writeShellScriptBin "my-rofi-power-menu" (builtins.readFile ../scripts/my-rofi-power-menu.sh);
+in
+{
+  home.packages = with pkgs; [
+    script
+  ];
+
   programs.rofi = {
     enable = true;
     package = pkgs.rofi-wayland;
@@ -6,7 +14,7 @@
       pkgs.rofi-power-menu
     ];
     extraConfig = {
-      modes = "drun,combi,power-menu:${pkgs.rofi-power-menu}/bin/rofi-power-menu";
+      modes = "drun,combi,power-menu:my-rofi-power-menu";
     };
   };
 }
