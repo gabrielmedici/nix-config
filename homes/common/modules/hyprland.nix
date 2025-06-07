@@ -11,6 +11,19 @@
     enable = true;
   };
 
+  services.hyprpaper = {
+    enable = true;
+    settings = {
+      ipc = "off";
+      preload = [
+        "/etc/nixos/homes/common/wallpapers/sm1jpn82i71fi.jpeg"
+      ];
+      wallpaper = [
+        "eDP-1,/etc/nixos/homes/common/wallpapers/sm1jpn82i71fi.jpeg"
+      ];
+    };
+  };
+
   wayland.windowManager.hyprland = {
     enable = true;
     plugins = [
