@@ -12,9 +12,10 @@ in
     package = pkgs.rofi-wayland;
     plugins = [
       pkgs.rofi-power-menu
+      pkgs.rofi-calc
     ];
     extraConfig = {
-      modes = "drun,combi,power-menu:my-rofi-power-menu";
+      modes = "drun,combi,calc,power-menu:my-rofi-power-menu";
     };
   };
 }

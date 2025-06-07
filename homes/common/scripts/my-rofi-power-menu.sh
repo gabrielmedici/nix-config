@@ -3,8 +3,8 @@
 # Define commands for each action
 shutdown_cmd="systemctl poweroff > /dev/null 2>&1 &"
 restart_cmd="systemctl reboot > /dev/null 2>&1 &"
-sleep_cmd="systemctl suspend > /dev/null 2>&1 && eval \"$lock_cmd\""
-hibernate_cmd="systemctl hibernate > /dev/null 2>&1 && eval \"$lock_cmd\""
+sleep_cmd="eval \"$lock_cmd\" && systemctl suspend > /dev/null 2>&1"
+hibernate_cmd="eval \"$lock_cmd\" && systemctl hibernate > /dev/null 2>&1"
 lock_cmd="hyprlock > /dev/null 2>&1 &"
 logout_cmd="uwsm stop > /dev/null 2>&1 &"
 
