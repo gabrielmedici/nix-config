@@ -28,6 +28,7 @@
     ../common/modules/rofi.nix
     ../common/modules/astroterm.nix
     ../common/modules/gtk.nix
+    ../common/modules/syncthing.nix
   ];
 
   xdg.desktopEntries = {
