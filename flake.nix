@@ -14,6 +14,11 @@
     hardware.url = "github:nixos/nixos-hardware";
 
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
+
+    quickshell = {
+      url = "github:quickshell-mirror/quickshell";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =

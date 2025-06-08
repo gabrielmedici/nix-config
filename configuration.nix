@@ -15,6 +15,7 @@
 
       ./modules/hyprland.nix
       ./modules/fonts.nix
+      ./modules/steam.nix
     ];
 
   # Bootloader.

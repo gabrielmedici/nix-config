@@ -29,6 +29,7 @@
     ../common/modules/astroterm.nix
     ../common/modules/gtk.nix
     ../common/modules/syncthing.nix
+    ../common/modules/quickshell.nix
   ];
 
   xdg.desktopEntries = {
