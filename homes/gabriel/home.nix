@@ -30,12 +30,17 @@
     ../common/modules/gtk.nix
     ../common/modules/syncthing.nix
     ../common/modules/quickshell.nix
+    ../common/modules/golang.nix
   ];
 
   xdg.desktopEntries = {
     edit-nix-config = {
       name = "Edit Nix Config with VSCode";
       exec = "code /etc/nixos/";
+    };
+    calculator = {
+      name = "Calculator";
+      exec = "rofi -show calc";
     };
   };
 

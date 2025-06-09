@@ -158,7 +158,6 @@
         "$mod, mouse_down, workspace, e+1"
         "$mod, mouse_up, workspace, e-1"
         "$mod SHIFT, P, exec, rofi -show power-menu -theme-str 'window {width: 10em;} listview {lines: 6;}'"
-        "$mod SHIFT, X, exec, rofi -show calc"
       ];
       bindm = [
         "$mod, mouse:272, movewindow"
